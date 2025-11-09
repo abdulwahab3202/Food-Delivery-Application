@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cors({
   origin: ["http://localhost:5173","https://food-delivery-application-neon.vercel.app",
-    "http://localhost:5174"
+    "http://localhost:5174","https://food-delivery-application-lmi3.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
