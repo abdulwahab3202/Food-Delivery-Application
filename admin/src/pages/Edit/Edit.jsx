@@ -24,7 +24,7 @@ const Edit = ({ selectedFood, setSelectedFood }) => {
     const editFood = async (event) => {
         event.preventDefault();
         try {
-            const result = await axios.post("http://localhost:3000/food/edit", { itemId: selectedFood.id, name, price, description, image });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/food/edit`, { itemId: selectedFood.id, name, price, description, image });
 
             if (result.data.success) {
                 Swal.fire({

@@ -15,7 +15,7 @@ const Add = () => {
   const addfood = async (event) => {
     event.preventDefault();
     try {
-      const result = await axios.post("http://localhost:3000/food/add", { name, price, description, category, image });
+      const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/food/add`, { name, price, description, category, image });
       if (result.data.success) {
         Swal.fire({
           title: "Horrah!",

@@ -16,7 +16,6 @@ const Home = () => {
     <div className="home">
       <div className="home-contents">
         <h2>Welcome to the<br/>Admin Panel</h2>
-        {/* <p>Here you can list, add, edit and delete<br/>the food dynamically into the website!</p> */}
         <button onClick={start}>GET STARTED</button>
       </div>
     </div>

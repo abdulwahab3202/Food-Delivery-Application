@@ -10,7 +10,7 @@ export const StoreContextProvider = (props) => {
 
     const fetchFood = async () => {
         try {
-            const food = await axios.get('http://localhost:3000/food/list');
+            const food = await axios.get(`${import.meta.env.VITE_BASE_URL}/food/list`);
             if (food) {
                 setFoodlist(food.data);
             }

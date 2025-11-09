@@ -37,7 +37,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await axios.post("http://localhost:3000/food/delete", { itemId: id });
+                    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/food/delete`, { itemId: id });
                     if (response.data.success) {
                         Swal.fire({
                             title: "Deleted!",

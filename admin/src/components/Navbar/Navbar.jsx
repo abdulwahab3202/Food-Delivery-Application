@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './Navbar.css'
 import { Link, useNavigate } from 'react-router-dom'
-import { StoreContext } from '../../context/StoreContext'
 import Swal from 'sweetalert2';
 
 const Navbar = () => {
@@ -13,9 +12,6 @@ const Navbar = () => {
                 <img src="https://ik.imagekit.io/abdulwahab/images/logo.png?updatedAt=1748609300504" alt="logo image" className='logo' onClick={() => { navigate('/') }} />
                 <h1>Arab Spice</h1>
             </div>
-            {/* <div className="navbar-left">
-                <h1>Admin Panel</h1>
-            </div> */}
             <div className="navbar-right">
                 {admin === null ? <Link to='/login'><button>Log in</button></Link> :
                     <div className="dropdown">
