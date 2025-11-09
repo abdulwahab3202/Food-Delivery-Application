@@ -5,7 +5,7 @@ import { StoreContext } from '../../context/StoreContext';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const clientId = "900090433661-9eu51aihutsfh3u0tcis5i5mq2a0496t.apps.googleusercontent.com";
+const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 export default function Google({setShowLogin}) {
     const navigate=useNavigate();

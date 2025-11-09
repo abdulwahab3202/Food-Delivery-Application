@@ -46,7 +46,7 @@ const CheckoutPage = () => {
       .filter((item) => item !== null);
 
 
-    const payment = await axios.post("http://localhost:3000/payment", { items: orderDetails, userId: user._id });
+    const payment = await axios.post(`${import.meta.env.VITE_BASE_URL}/payment`, { items: orderDetails, userId: user._id });
 
     if (payment.data.success) {
       clearCartItems();
