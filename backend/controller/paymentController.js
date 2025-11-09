@@ -19,9 +19,9 @@ const payment = async(req, res) => {
                 quantity: item.quantity,
             })),
             mode: "payment",
-            success_url: "http://localhost:5173/orderplaced",
-            cancel_url: "http://localhost:5173/",
-        });        
+            success_url: "https://food-delivery-application-neon.vercel.app/orderplaced",
+            cancel_url: "https://food-delivery-application-neon.vercel.app/",
+        });
         res.json({success: true,msg:"Payment success", sessionUrl: session.url});
     }
     catch(err){
