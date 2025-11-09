@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from "axios"
-import './LoginPopup.css';
+import './LoginPopUp.css';
 import { StoreContext } from '../../context/StoreContext';
 import Swal from 'sweetalert2';
 import Google from '../GoogleAuth/Google';
