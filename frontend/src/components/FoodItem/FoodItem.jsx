@@ -24,7 +24,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
             });
             return;
         }
-        await axios.post("http://localhost:3000/user/wishlist", { _id: user._id, itemId: id });
+        await axios.post(`${import.meta.env.VITE_BASE_URL}/user/wishlist`, { _id: user._id, itemId: id });
         await getWishlist();
     };
     

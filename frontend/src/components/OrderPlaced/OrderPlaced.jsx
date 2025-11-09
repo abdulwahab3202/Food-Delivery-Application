@@ -13,7 +13,7 @@ const OrderPlaced = ({ setMenu }) => {
         <img src="https://ik.imagekit.io/abdulwahab/images/green_tick_image.png?updatedAt=1748610251401" alt="gree-tick-image" />
         <button onClick={async () => {
           try {
-            const response = await axios.post("http://localhost:3000/user/myorders", { _id: user._id });
+            const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/myorders`, { _id: user._id });
             if (response.data.success) {
               fetchMyOrders();
               clearCartItems();

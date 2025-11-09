@@ -12,7 +12,7 @@ export const StoreContextProvider = (props) => {
 
     const fetchFood = async () => {
         try {
-            const food = await axios.get('http://localhost:3000/food/list');
+            const food = await axios.get(`${import.meta.env.VITE_BASE_URL}/food/list`);
             if (food) {
                 setFood_list(food.data);
             }
@@ -42,7 +42,7 @@ export const StoreContextProvider = (props) => {
 
     const fetchMyOrders = async () => {
         try {
-            const result = await axios.post("http://localhost:3000/user/fetchmyorders", { _id: user._id });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/fetchmyorders`, { _id: user._id });
             if (result?.data?.success) {
                 setMyorders(result.data.user.myOrders);
                 localStorage.setItem("myOrders", JSON.stringify(result.data.user.myOrders));
@@ -55,7 +55,7 @@ export const StoreContextProvider = (props) => {
     const getCartItems = async () => {
         if (!user || !user._id) return;
         try {
-            const res = await axios.post("http://localhost:3000/cart/getcart", { _id: user._id });
+            const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/cart/getcart`, { _id: user._id });
             if (res?.data?.success) {
                 setCartItems(res.data.cartItems || {});
                 localStorage.setItem("cartItems", JSON.stringify(res.data.cartItems || {}));
@@ -68,7 +68,7 @@ export const StoreContextProvider = (props) => {
     const addToCart = async (id) => {
         if (!user || !user._id) return;
         try {
-            const result = await axios.post('http://localhost:3000/cart/add', { _id: user._id, itemId: id });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/cart/add`, { _id: user._id, itemId: id });
             if (result?.data?.success) {
                 setCartItems(result.data.cartItems);
                 localStorage.setItem("cartItems", JSON.stringify(result.data.cartItems));
@@ -81,7 +81,7 @@ export const StoreContextProvider = (props) => {
     const removeFromCart = async (id) => {
         if (!user || !user._id) return;
         try {
-            const result = await axios.post('http://localhost:3000/cart/remove', { _id: user._id, itemId: id });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/cart/remove`, { _id: user._id, itemId: id });
             if (result?.data?.success) {
                 setCartItems(result.data.cartItems);
                 localStorage.setItem("cartItems", JSON.stringify(result.data.cartItems));
@@ -94,7 +94,7 @@ export const StoreContextProvider = (props) => {
     const deleteFromCart = async (id) => {
         if (!user || !user._id) return;
         try {
-            const result = await axios.post('http://localhost:3000/cart/delete', { _id: user._id, itemId: id });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/cart/delete`, { _id: user._id, itemId: id });
             if (result?.data?.success) {
                 setCartItems(result.data.cartItems);
                 localStorage.setItem("cartItems", JSON.stringify(result.data.cartItems));
@@ -106,7 +106,7 @@ export const StoreContextProvider = (props) => {
 
     const getWishlist = async () => {
         try {
-            const result = await axios.post("http://localhost:3000/user/wishlist", { _id: user._id });
+            const result = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/wishlist`, { _id: user._id });
             if (result.data.success) {
                 setWishlist({ ...result.data.wishlist });
             }
@@ -137,7 +137,7 @@ export const StoreContextProvider = (props) => {
 
     const googlelogin = async (details) => {
     try {
-      const res = await axios.post("http://localhost:3000/user/googlelogin", details);
+      const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/googlelogin`, details);
       if (res.data.success) {
         localStorage.setItem('user', JSON.stringify(res.data.user));
         setUser(res.data.user);

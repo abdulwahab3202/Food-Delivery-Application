@@ -16,7 +16,7 @@ const LoginPopup = ({ setShowLogin }) => {
 
     const handlesignup = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/user/signup", { name, email, password });
+            const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/signup`, { name, email, password });
             localStorage.setItem("user", JSON.stringify(res.data.user));
             setUser(res.data.user);
             Swal.fire({
@@ -34,7 +34,7 @@ const LoginPopup = ({ setShowLogin }) => {
 
     const handlelogin = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/user/login", { email, password });
+            const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/user/login`, { email, password });
             if (res.data.success) {
                 localStorage.setItem("user", JSON.stringify(res.data.user));
                 setUser(res.data.user);

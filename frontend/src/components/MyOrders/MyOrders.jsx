@@ -7,7 +7,6 @@ const MyOrders = () => {
 
   const userOrders = myorders.length > 0 ? myorders : user?.myOrders || [];
 
-  // Create a lookup map for food_list
   const foodMap = food_list.reduce((acc, food) => {
     acc[food._id] = food;
     return acc;

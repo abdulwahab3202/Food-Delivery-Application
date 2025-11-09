@@ -8,7 +8,7 @@ const ExploreMenu = ({category, setCategory}) => {
 
     const fetchmenu = async () => {
         try {
-            const menu = await axios.get('http://localhost:3000/food/menu');
+            const menu = await axios.get(`${import.meta.env.VITE_BASE_URL}/food/menu`);
             if (menu) {
                 setMenu_list(menu.data);
             }

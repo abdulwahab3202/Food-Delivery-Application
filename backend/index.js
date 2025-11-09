@@ -10,9 +10,14 @@ const app = express();
 const port = 3000;
 
 connectdbs();
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use(cors({
+  origin: ["http://localhost:5173"], 
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.get("/", (req, res) => {
     res.send("Hello World");
