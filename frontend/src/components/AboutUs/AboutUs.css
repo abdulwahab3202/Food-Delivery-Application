@@ -1,0 +1,296 @@
+.about-us {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-us-content h2 {
+    font-size: 27px;
+}
+
+.h2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.para {
+    margin-top: 5px;
+}
+
+.icon-image {
+    width: 5vw;
+}
+
+/* .about-us-right img{
+    width: 40vw;
+    height: 80vh;
+    border-radius: 15px;
+} */
+.about-us-one-two {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-us-one img {
+    width: 6vw;
+}
+
+.about-us-two img {
+    width: 4.3vw;
+}
+
+.about-us-three-four {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-us-three img {
+    width: 5vw;
+}
+
+.about-us-four img {
+    width: 5.5vw;
+}
+
+.about-us-one {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px rgb(35, 34, 34);
+    padding: 30px;
+    width: 48%;
+}
+
+.about-us-two {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px rgb(35, 34, 34);
+    padding: 30px;
+    width: 48%;
+}
+
+.about-us-three {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px rgb(35, 34, 34);
+    padding: 30px;
+    width: 48%;
+}
+
+.about-us-four {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px rgb(35, 34, 34);
+    padding: 30px;
+    width: 48%;
+}
+
+.about-us-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width:769px) {
+    .about-us-left {
+        width: 100%;
+    }
+
+    .about-us-one img {
+        width: 7vw;
+    }
+
+    .about-us-two img {
+        width: 5.3vw;
+    }
+
+    .about-us-three img {
+        width: 6vw;
+    }
+
+    .about-us-four img {
+        width: 6.5vw;
+    }
+
+    .about-us {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media(max-width:711px) {
+    .about-us-one {
+        padding: 15px;
+    }
+
+    .about-us-two {
+        padding: 15px;
+    }
+
+    .about-us-three {
+        padding: 15px;
+    }
+
+    .about-us-four {
+        padding: 15px;
+    }
+}
+
+@media (max-width:653px) {
+    .about-us-one img {
+        width: 8vw;
+    }
+
+    .about-us-two img {
+        width: 6.3vw;
+    }
+
+    .about-us-three img {
+        width: 7vw;
+    }
+
+    .about-us-four img {
+        width: 7.5vw;
+    }
+
+    .about-us-one {
+        padding: 10px;
+    }
+
+    .about-us-two {
+        padding: 10px;
+    }
+
+    .about-us-three {
+        padding: 10px;
+    }
+
+    .about-us-four {
+        padding: 10px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:461px) {
+    .about-us-content h2 {
+        font-size: 25px;
+    }
+
+    .about-us-one-two {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-us-three-four {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .about-us-one img {
+        width: 10vw;
+    }
+
+    .about-us-two img {
+        width: 8.3vw;
+    }
+
+    .about-us-three img {
+        width: 9vw;
+    }
+
+    .about-us-four img {
+        width: 9.5vw;
+    }
+
+    .about-us-one {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-us-two {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-us-three {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-us-four {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* @media (max-width:475px) {
+    .about-us-left {
+        width: 100%;
+    }
+
+    .about-us-content h2 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width:431px) {
+    .about-us {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .h2{
+        font-size: 15px;
+    }
+    .para{
+        font-size: 13px;
+    }
+
+    .about-us-left {
+        width: 100%;
+    }
+
+    .about-us-content h2 {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:376px) {
+    .about-us-content h2 {
+        font-size: 18px;
+    }
+
+    .about-us-content p {
+        font-size: 11px;
+    }
+
+    .h2{
+        font-size: 13px;
+    }
+    .para{
+        font-size: 11px;
+    }
+    
+}
+
+@media(max-width:325px) {
+    .about-us {
+        margin-top: 20px;
+    }
+} */

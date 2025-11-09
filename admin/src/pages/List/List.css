@@ -1,0 +1,34 @@
+.button-container {
+    width: 10%;
+    margin: auto;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    background-color: rgb(159, 159, 159);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+@media(max-width:700px) {
+    .button-container {
+        width: 30%;
+    }
+}
+@media(max-width:450px) {
+    .button-container {
+        width: 40%;
+    }
+}

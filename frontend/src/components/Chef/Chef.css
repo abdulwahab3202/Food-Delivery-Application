@@ -1,0 +1,224 @@
+.chef-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.chef-content h2{
+    font-size: 27px;
+    text-align: center;
+}
+.chef-content p{
+    text-align: center;
+    margin-top: 20px;
+}
+.chef-one-two-three{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.chef-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 3px black;
+}
+.chef-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 3px black;
+}
+.chef-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 3px black;
+}
+.chef-one img{
+    width: 20vw;
+    border-radius: 15px;
+}
+.chef-two img{
+    width: 20vw;
+    border-radius: 15px;
+}
+.chef-three img{
+    width: 20vw;
+    border-radius: 15px;
+}
+.h3{
+    margin-top: 15px;
+}
+.p{
+    margin-top: 5px;
+}
+.chef-icon{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.chef-icon i{
+    cursor: pointer;
+}
+@media (max-width:541px){
+    .chef-content h2{
+        font-size: 30px;
+    }
+    .chef-content p{
+        font-size: 15px;
+    }
+    .chef-one-two-three{
+        justify-content: space-between;
+    }
+    .h3{
+        font-size: 14px;
+    }
+    .p{
+        font-size: 12px;
+    }
+    .chef-icon{
+        gap: 10px;
+    }
+    .chef-icon i{
+        font-size: 12px;
+    }
+}
+@media (max-width:475px){
+    .chef-container{
+        margin-top: 30px;
+    }
+    .chef-content h2{
+        font-size: 25px;
+    }
+    .chef-content p{
+        font-size: 12px;
+    }
+    .chef-one-two-three{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .chef-one{
+        width:30%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .chef-one img{
+        border-radius: 10px;
+    }
+    .chef-two{
+        width:30%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .chef-two img{
+        border-radius: 10px;
+    }
+    .chef-three{
+        width:30%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .chef-three img{
+        border-radius: 10px;
+    }
+    .h3{
+        font-size: 11px;
+    }
+    .p{
+        font-size: 9px;
+    }
+}
+@media(max-width:431px){
+    .chef-container{
+        margin-top: 30px;
+    }
+    .chef-content h2{
+        font-size: 25px;
+    }
+    .chef-content p{
+        font-size: 12px;
+    }
+    .chef-one-two-three{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .chef-one{
+        width:30%;
+        padding: 10px;
+    }
+    .chef-one img{
+        width:20vw;
+    }
+    .chef-two{
+        width:30%;
+        padding: 10px;
+    }
+    .chef-two img{
+        width:20vw;
+    }
+    .chef-three{
+        width:30%;
+        padding: 10px;
+    }
+    .chef-three img{
+        width:20vw;
+    }
+    .h3{
+        font-size: 11px;
+    }
+    .p{
+        font-size: 9px;
+    }
+}
+@media(max-width:403px){
+    .chef-one-two-three{
+        display: flex;
+        flex-direction: column;
+    }
+    .chef-one{
+        width: 70%;
+        padding: 20px;
+    }
+    .chef-one img{
+        width:50vw;
+    }
+    .chef-two{
+        width: 70%;
+        padding: 20px;
+    }
+    .chef-two img{
+        width:50vw;
+    }.chef-three{
+        width: 70%;
+        padding: 20px;
+    }
+    .chef-three img{
+        width:50vw;
+    }
+    .h3{
+        font-size: 17px;
+    }
+    .p{
+        font-size: 13px;
+    }
+    .chef-icon i{
+        font-size: 15px;
+    }
+}
+@media(max-width:376px){
+    .chef-content h2{
+        font-size: 22px;
+    }
+    .chef-content p{
+        font-size: 11px;
+    }
+}

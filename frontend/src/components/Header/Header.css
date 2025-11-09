@@ -1,0 +1,125 @@
+.header {
+    height: 38vw;
+    background: url('https://ik.imagekit.io/abdulwahab/images/header_img.jpg?updatedAt=1748609664499') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 25%;
+    left: 27vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color:rgb(190, 181, 181);
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color:rgb(190, 181, 181);
+    font-size: 1vw;
+    letter-spacing: 1.2px;
+}
+
+.header-contents a {
+    text-decoration: none;
+    border: 1px solid rgb(159, 159, 159);
+    box-shadow: 0px 0px 2px 2px rgb(159, 159, 159);
+    background-color: rgb(19, 18, 18);
+    color: rgb(159, 159, 159);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    font-size: max(1vw, 13px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header-contents a:hover {
+    background-color: rgb(159, 159, 159);
+    color: black;
+}
+
+@media (max-width:1050px) {
+    .header {
+        height: 38vw;
+    }
+
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-contents {
+        max-width: 55%;
+        bottom: 40%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 1vw 2vw;
+    }
+}
+@media (max-width:475px){
+    .header-contents h2{
+        font-size: 25px;
+    }
+    .header-contents{
+        bottom: 30%;
+        left: 24vw;
+    }
+}
+@media (max-width:449px){
+    .header-contents h2{
+        font-size: 24px;
+    }
+    .header-contents{
+        bottom: 30%;
+        left: 24vw;
+    }
+}
+@media (max-width:433px){
+    .header-contents{
+        bottom: 30%;
+        left: 24vw;
+    }
+    .header-contents h2{
+        font-size: 23px;
+    }
+}
+@media (max-width:433px){
+    .header-contents h2{
+        font-size: 22px;
+    }
+}
+@media (max-width:403px){
+    .header-contents h2{
+        font-size: 21px;
+    }
+}
+@media(max-width:391px){
+    .header-contents{
+        bottom: 30%;
+    }
+    .header-contents h2{
+        font-size: 19px;
+    }
+}
+@media(max-width:321px){
+    .header-contents h2{
+        font-size: 16px;
+    }
+}

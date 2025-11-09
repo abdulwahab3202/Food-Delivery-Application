@@ -1,0 +1,94 @@
+.addfoodcontainer1 {
+    width: 100%;
+    height: 100%;
+}
+
+.addfoodcontainer1 form {
+    place-self: center;
+    width: max(30vw, 330px);
+    background-color: rgb(30, 28, 28);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 15px;
+    padding: 25px 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+.addfoodcontainer1 h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.addfoodcontainer1 p {
+    font-weight: 500;
+}
+
+.addfoodcontainer1 input,
+.addfoodcontainer1 textarea,
+.addfoodcontainer1 select {
+    border: 2.5px solid gray;
+    background-color: rgb(30, 28, 28);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+}
+
+.addfoodcontainer1 input:focus,
+.addfoodcontainer1 textarea:focus,
+.addfoodcontainer1 select:focus {
+    box-shadow: 0px 0px 2px 2px gray;
+    color: white;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons input {
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px gray;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons input:hover {
+    background-color: gray;
+    color: black;
+    box-shadow: none;
+}
+
+@media(max-width:768px) {
+    .addfoodcontainer1 h2 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:450px) {
+    .addfoodcontainer1 h2 {
+        font-size: 20px;
+    }
+
+    .addfoodcontainer1 form {
+        width: 100%;
+    }
+
+    .addfoodcontainer1 input,
+    .addfoodcontainer1 textarea,
+    .addfoodcontainer1 select {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.display h1 {
+    font-size: 40px;
+}
+
+.navbar .logo {
+    width: 15vh;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px black;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.navbar-right .profile-image {
+    width: 7vh;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+    background-color: rgb(30, 28, 28);
+    min-width: 120px;
+    box-shadow: 0px 2px 2px black;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px 14px;
+}
+
+.dropdown-content p:hover {
+    background-color: rgb(38, 38, 38);
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .display h1 {
+        font-size: 30px;
+    }
+
+    .navbar .logo {
+        width: 10vh;
+    }
+
+    .navbar-right .profile-image {
+        width: 5vh;
+    }
+
+    .navbar button {
+        font-size: 14px;
+        padding: 7px 21px;
+    }
+
+    .dropdown-content {
+        min-width: 80px;
+    }
+
+    .dropdown-content p {
+        padding: 3px 6px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .display h1 {
+        font-size: 25px;
+    }
+
+    .navbar .logo {
+        width: 8vh;
+    }
+    .navbar button {
+        font-size: 12px;
+        padding: 6px 18px;
+    }
+}
+@media (max-width:340px) {
+    .display{
+        gap: 0px;
+    }
+    .navbar button {
+        font-size: 11px;
+        padding: 5px 15px;
+    }
+}

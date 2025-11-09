@@ -1,0 +1,43 @@
+.admin-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 150px;
+}
+
+.admin-home-container {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(30, 28, 28);
+    border-radius: 7px;
+    cursor: pointer;
+    color: whitesmoke;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-home-container:hover {
+    box-shadow: 0px 0px 2px 2px black;
+    scale: 1.01;
+    transition: 0.2s ease;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+@media(max-width:500px) {
+    .admin-home {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .admin-home-container {
+        padding: 40px;
+    }
+}

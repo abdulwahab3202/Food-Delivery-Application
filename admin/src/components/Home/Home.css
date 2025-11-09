@@ -1,0 +1,192 @@
+.home {
+    min-height: 80vh;
+    background: url('https://ik.imagekit.io/abdulwahab/images/background.jpg?updatedAt=1748705628594') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.home-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 35%;
+    bottom: 25%;
+    left: 10vw;
+    animation: fadeIn 3s;
+}
+
+.home-contents h2 {
+    font-weight: 500;
+    text-align: center;
+    font-size: max(4.5vw, 22px);
+    background: linear-gradient(to right, #ff00cc 0%, #333399 51%, #ff00cc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .home-contents p {
+    color: rgb(190, 181, 181);
+    text-align: center;
+    margin: auto;
+    letter-spacing: 1.2px;
+} */
+
+.home-contents button {
+    background-image: linear-gradient(to right, #ff00cc 0%, #333399 51%, #ff00cc 100%)
+}
+
+.home-contents button {
+    width: 15vw;
+    margin: auto;
+    padding: 15px 45px;
+    text-align: center;
+    background-size: 200% auto;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.home-contents button:hover {
+    color: rgb(204, 204, 204);
+}
+
+@media (max-width:768px) {
+    .home {
+        background: url('https://ik.imagekit.io/abdulwahab/images/background.jpg?updatedAt=1748705628594') no-repeat center center center;
+    }
+}
+
+@media (max-width:1230px) {
+    .home-contents button {
+        width: 20vw;
+    }
+
+    .home-contents h2 {
+        font-size: 4.7vw;
+    }
+}
+
+@media (max-width:1030px) {
+    .home-contents {
+        max-width: 50%;
+    }
+
+    .home-contents h2 {
+        font-size: 6vw;
+    }
+
+    .home-contents button {
+        width: 25vw;
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        background: url('https://ik.imagekit.io/abdulwahab/images/background3.jpg?updatedAt=1748708808363') no-repeat center center;
+        background-size: cover;
+    }
+
+    .home-contents {
+        max-width: 50%;
+        bottom: 33%;
+        left: 10vw;
+    }
+
+    .home-contents h2 {
+        font-size: 5vw;
+    }
+
+    .home-contents button {
+        width: 20vw;
+        padding: 15px 20px;
+    }
+}
+@media (max-width:680px){
+    .home {
+        background: url('https://ik.imagekit.io/abdulwahab/images/background3.png?updatedAt=1748710245140') no-repeat;
+        background-size: cover;
+    }
+    .home-contents h2 {
+        font-size: 5.5vw;
+    }
+
+    .home-contents button {
+        width: 25vw;
+        padding: 12px 18px;
+    }
+}
+@media (max-width:600px){
+    .home-contents h2 {
+        font-size: 6vw;
+    }
+
+    .home-contents button {
+        width: 30vw;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:600px){
+    .home {
+        background: url('https://ik.imagekit.io/abdulwahab/images/background3.png?updatedAt=1748710245140') no-repeat center center;
+        background-size: cover;
+    }
+    .home-contents h2 {
+        font-size: 6.5vw;
+    }
+
+    .home-contents button {
+        width: 30vw;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:500px){
+    .home-contents h2 {
+        font-size: 6.7vw;
+    }
+
+    .home-contents button {
+        width: 30vw;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:450px){
+    .home {
+        background: url('https://ik.imagekit.io/abdulwahab/images/background2.png?updatedAt=1748708547371') no-repeat center center;
+        background-size: cover;
+        height: 100%;
+    }
+    .home-contents{
+        left: 20vw;
+        bottom: 40%;
+        max-width: 100%;
+    }
+    .home-contents h2 {
+        font-size: 8vw;
+    }
+
+    .home-contents button {
+        width: 35vw;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:450px){
+    .home-contents{
+        left: 16vw;
+        bottom: 40%;
+        max-width: 100%;
+    }
+    .home-contents h2 {
+        font-size: 9vw;
+    }
+
+    .home-contents button {
+        width: 40vw;
+        padding: 8px 15px;
+    }
+}
